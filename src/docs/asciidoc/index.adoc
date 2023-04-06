@@ -1,0 +1,68 @@
+= 고양이 이미지 API 명세서
+notification-api-docs
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+
+ifndef::snippets[]
+:snippets: ./build/generated-snippets
+endif::[]
+
+== 고양이 이미지 API
+
+---
+=== 랜덤 50개 고양이 사진 조회 API
+
+==== Request Sample
+
+include::{snippets}/조회 성공 - 랜덤한 50개 고양이 사진 조회 성공/http-request.adoc[]
+
+==== Response Sample
+
+include::{snippets}/조회 성공 - 랜덤한 50개 고양이 사진 조회 성공/http-response.adoc[]
+
+==== Response Fields
+
+include::{snippets}/조회 성공 - 랜덤한 50개 고양이 사진 조회 성공/response-fields.adoc[]
+---
+
+=== 특정 품종의 고양이 사진 조회 API
+
+==== Request Sample
+
+include::{snippets}/조회 성공 - 특정 품종의 고양이 사진 조회 성공/http-request.adoc[]
+
+==== Request Fields
+
+include::{snippets}/조회 성공 - 특정 품종의 고양이 사진 조회 성공/query-parameters.adoc[]
+
+==== Response Sample
+
+include::{snippets}/조회 성공 - 특정 품종의 고양이 사진 조회 성공/http-response.adoc[]
+
+==== Response Fields
+
+include::{snippets}/조회 성공 - 특정 품종의 고양이 사진 조회 성공/response-fields.adoc[]
+---
+
+=== 고양이 사진 상세정보 API
+
+==== Request Sample
+
+include::{snippets}/조회 성공 - ID를 이용하여 특정 고양이 사진 조회 성공/http-request.adoc[]
+
+==== Request Fields
+
+include::{snippets}/조회 성공 - ID를 이용하여 특정 고양이 사진 조회 성공/path-parameters.adoc[]
+
+==== Response Sample
+
+include::{snippets}/조회 성공 - ID를 이용하여 특정 고양이 사진 조회 성공/http-response.adoc[]
+
+==== Response Fields
+
+include::{snippets}/조회 성공 - ID를 이용하여 특정 고양이 사진 조회 성공/response-fields.adoc[]
+
