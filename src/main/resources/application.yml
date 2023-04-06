@@ -1,14 +1,14 @@
 spring:
   config:
-    import: file:./db-config/db_info.env[.properties], file:./env/cat_api_info.env[.properties]
+    import: file:./env/cat_api_info.env[.properties]
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/${MYSQL_DATABASE}
+    url: jdbc:mysql://localhost:3306/cat_db
     username: root
-    password: ${MYSQL_ROOT_PASSWORD}
+    password: cat1234!#
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: validate
     properties:
       hibernate:
         format_sql: true
