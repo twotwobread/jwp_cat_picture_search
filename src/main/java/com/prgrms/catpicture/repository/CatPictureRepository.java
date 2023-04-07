@@ -15,8 +15,7 @@ public interface CatPictureRepository extends JpaRepository<CatPicture, Long> {
 
 	List<CatPicture> findAllByName(String name);
 
-	@Query(value = "select id, height, image_id, name, origin, temperament, url, width "
-		+ "from cat_picture as c order by RAND() limit 50",
+	@Query(value = "select * from cat_picture as c order by RAND() limit 50",
 		nativeQuery = true)
 	List<CatPicture> findRandom50();
 }
