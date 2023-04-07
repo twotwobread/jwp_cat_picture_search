@@ -20,7 +20,7 @@
 
 ```aidl
 CAT_API_HOST=https://api.thecatapi.com/v1
-CAT_API_KEY=live_5HttZd5Hq5MYMS1r3syGlccAiEFT5rWGYx6Yg44lr1LrRobbA0NtfPygHUbSXwLC
+CAT_API_KEY=자신의 API key 넣기
 ```
 
 ### 5. 애플리케이션을 실행해줍니다.
