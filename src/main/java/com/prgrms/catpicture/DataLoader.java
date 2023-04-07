@@ -21,7 +21,7 @@ public class DataLoader implements CommandLineRunner {
 		try {
 			externalCatPictureService.loadCatPictures(MAX_LIMIT);
 		} catch (RuntimeException e) {
-			log.info("CommandLineRunner fails = ", e.getMessage());
+			log.info(e.getMessage());
 		}
 	}
 }
