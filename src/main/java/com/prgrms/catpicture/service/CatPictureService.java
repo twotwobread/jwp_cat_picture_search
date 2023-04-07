@@ -8,7 +8,6 @@ import org.springframework.orm.jpa.JpaObjectRetrievalFailureException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.prgrms.catpicture.client.CatPictureClient;
 import com.prgrms.catpicture.dto.CatPictureDetailResponseDto;
 import com.prgrms.catpicture.dto.CatPictureResponseVo;
 import com.prgrms.catpicture.model.CatPicture;
@@ -21,11 +20,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
 public class CatPictureService {
-
-	private static final int LIMIT = 50;
-	private static final int HAS_BREEDS = 1;
 	private final CatPictureRepository catPictureRepository;
-	private final CatPictureClient catPictureClient;
 
 	public CatPictureDetailResponseDto getCatPicture(String id) {
 		CatPicture catPicture = catPictureRepository.findByImageId(id)
