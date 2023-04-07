@@ -14,7 +14,7 @@ public interface CatPictureClient {
 
 	@GetMapping("/images/search")
 	List<ExternalCatPictureApiResponseDto> getCatPictures50(
-		@RequestParam int limit,
-		@RequestParam int has_breeds);
+		@RequestParam(value = "limit") int limit,
+		@RequestParam(value = "has_breeds") int has_breeds);
 
 }
