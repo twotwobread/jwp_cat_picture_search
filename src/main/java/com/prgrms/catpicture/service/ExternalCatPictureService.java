@@ -17,7 +17,6 @@ import lombok.RequiredArgsConstructor;
 @Transactional(readOnly = true)
 public class ExternalCatPictureService {
 
-	private static final int LIMIT = 50;
 	private static final int HAS_BREEDS = 1;
 	private final CatPictureRepository catPictureRepository;
 	private final CatPictureClient catPictureClient;
